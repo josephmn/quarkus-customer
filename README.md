@@ -55,3 +55,9 @@ If you want to learn more about building native executables, please consult http
 This example demonstrate RESTEasy JSON serialisation by letting you list, add and remove quark types from a list. Quarked!
 
 [Related guide section...](https://quarkus.io/guides/rest-json#creating-your-first-json-rest-service)
+
+### ADD Dependency PostgreSQL
+
+```bash
+./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql"
+```
