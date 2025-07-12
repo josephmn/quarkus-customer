@@ -1,0 +1,16 @@
+{
+  "code": "01",
+  "accountNumber": "2323256568974",
+  "names": "primer cliente de prueba",
+  "surname": "altosano",
+  "phone": "2323565889",
+  "address": "calle ca 23",
+  "products": [
+    {
+      "product": 1
+    },
+    {
+      "product": 2
+    }
+  ]
+}
