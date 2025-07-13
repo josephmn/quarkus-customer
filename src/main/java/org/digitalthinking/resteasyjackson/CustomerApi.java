@@ -16,6 +16,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.digitalthinking.entites.Customer;
+import org.digitalthinking.entites.CustomerView;
 import org.digitalthinking.entites.Product;
 import org.digitalthinking.repositories.CustomerRepository;
 
@@ -46,7 +47,7 @@ public class CustomerApi {
 
     @GET
     @Blocking
-    public List<Customer> list() {
+    public List<CustomerView> list() {
         return pr.listCustomer();
     }
 

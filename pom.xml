@@ -67,6 +67,17 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
     </dependency>
+    <!-- Blaze-Persistence specific dependencies -->
+    <dependency>
+      <groupId>com.blazebit</groupId>
+      <artifactId>blaze-persistence-integration-quarkus-3</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.blazebit</groupId>
+      <artifactId>blaze-persistence-integration-hibernate-6.2</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
   </dependencies>
   <build>
     <plugins>
@@ -112,6 +123,13 @@
           <name>native</name>
         </property>
       </activation>
+<!--      <dependencies>-->
+<!--        <dependency>-->
+<!--          <groupId>com.blazebit</groupId>-->
+<!--          <artifactId>blaze-persistence-entity-view-processor-jakarta</artifactId>-->
+<!--          <scope>provided</scope>-->
+<!--        </dependency>-->
+<!--      </dependencies>-->
       <build>
         <plugins>
           <plugin>
